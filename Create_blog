@@ -1,0 +1,52 @@
+  881  rails new Posts --skip-test-unit
+  882  cd Posts/
+  883  rails c
+  884  rake routes
+  885  vi
+  886  rspec
+  887  rspec --help
+  888  rails --help |less
+  889  gem list rspec
+  890  vi Gemfile
+  891  bundle
+  892  rails generate rspec:install
+  893  cd ..
+  894  history > Create_blog
+##  new creation with the above as a template
+  rails new blog  --skip-test-unit
+  cd blog
+  vi Gemfile #  add development loop with 'gem 'rspec-rails'
+  bundle
+  rails generate rspc:install
+##  then  
+  rails generate scaffold Post name:string title:string content:text
+$ rake db:migrate
+$ rake db:test:prepare
+
+  896  cat Create_blog 
+  897  rails new blog --skip-test-unit
+  898  cd blog
+  899  vi Gemfile 
+  900  cat ../Create_blog 
+  901  rails generate rspec:install
+  902  vi ../Create_blog 
+  903  cat ../Create_blog 
+  904  rails generate scaffold Post name:string title:string content:text
+  905  cat ../Create_blog 
+  906  rake db:migrate
+  907  rake tasks | grep prepare
+  908  rake task
+  909  rake --help
+  910  rake -T
+  911  rake -T prepare
+  912  rake -T db
+  913  cat ../Create_blog 
+  914  rake db:test:prepare
+  915  rail c
+  916  rails c
+  917  rails s
+  918  history
+  919  xxxfoo
+  920  history >>../Create_blog 
+  guard init rspec  #  "... added to Guardfile feel free to ..."
+## add gem 'libnotify'  to Gemfile
